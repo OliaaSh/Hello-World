@@ -27,24 +27,31 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="ohS-F9-10q"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-cX-92P">
-                                <rect key="frame" x="127" y="218" width="154.5" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sDG-Yu-Rar">
+                                <rect key="frame" x="100" y="192" width="214" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aq0-cX-92P" secondAttribute="trailing" constant="132.5" id="2pf-o3-3zM"/>
                             <constraint firstItem="12W-Wl-2Bt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5N6-4V-9Ah"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="12W-Wl-2Bt" secondAttribute="bottom" constant="91" id="EEx-a9-Ddb"/>
-                            <constraint firstItem="aq0-cX-92P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="UWq-Ik-ggh"/>
-                            <constraint firstItem="aq0-cX-92P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="bni-zX-nPO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sDG-Yu-Rar" secondAttribute="trailing" constant="100" id="F3R-Kw-PT4"/>
+                            <constraint firstItem="sDG-Yu-Rar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Oug-yC-9sN"/>
+                            <constraint firstItem="sDG-Yu-Rar" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="VPl-Lq-pPX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="sDG-Yu-Rar" id="Na9-2f-boh"/>
+                        <outlet property="showTextbutton" destination="12W-Wl-2Bt" id="SKd-qd-W1D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,8 +62,8 @@
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
